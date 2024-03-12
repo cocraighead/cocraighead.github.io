@@ -1,0 +1,11 @@
+.app-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.nav-wrapper-outer{
+    margin: 8px 8px 2px 2px;
+}
