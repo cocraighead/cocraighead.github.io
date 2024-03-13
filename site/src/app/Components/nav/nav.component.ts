@@ -12,8 +12,13 @@ export class NavComponent implements OnInit {
 
   @Input() data:any
   @Input() currentPage:number | undefined
-  
+
   ngOnInit(): void {
+    
+  }
+
+  iconClicked(i:number): void{
+    this.currentPage = i
   }
 
   

@@ -2,15 +2,18 @@
     "pages": [
         {
             "title":"About Me",
-            "iconPath":""
+            "iconPath":"assets/me_icon.png",
+            "selectedIconPath":"assets/me_icon_selected.png"
         },
         {
             "title":"Poker",
-            "iconPath":""
+            "iconPath":"assets/cards_icon.png",
+            "selectedIconPath":"assets/cards_icon_selected.png"
         },
         {
             "title":"Avatar The Last Airbender",
-            "iconPath":""
+            "iconPath":"assets/atla_icon.png",
+            "selectedIconPath":"assets/atla_icon_selected.png"
         }
         
     ]

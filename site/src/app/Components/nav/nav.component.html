@@ -1,5 +1,9 @@
 <div class="nav-wrapper">
     <div *ngFor="let page of data.pages; index as i;">
-        {{page.title}}
+        <div (click)="iconClicked(i)" class="nav-image-wrapper">
+            <img *ngIf="i === currentPage" class="nav-image" src={{page.selectedIconPath}}>
+            <img *ngIf="i !== currentPage" class="nav-image" src={{page.iconPath}}>
+        </div>
+        
     </div>
 </div>
