@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,11 +10,19 @@ export class ContentComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  dataLoading = true
+  @Input() currentPage:any
+
+  @Input() data:any
+  currentPageData:any = {}
   
   ngOnInit(): void {
     
   }
+
+  ngOnChanges()	: void {
+    this.currentPageData = this.data && this.data.pages[this.currentPage]
+  }
+
 
   
 

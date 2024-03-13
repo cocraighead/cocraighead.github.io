@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,6 +12,7 @@ export class NavComponent implements OnInit {
 
   @Input() data:any
   @Input() currentPage:number | undefined
+  @Output() pageChange = new EventEmitter<number>();
 
   ngOnInit(): void {
     
@@ -19,6 +20,7 @@ export class NavComponent implements OnInit {
 
   iconClicked(i:number): void{
     this.currentPage = i
+    this.pageChange.emit(i);
   }
 
   
