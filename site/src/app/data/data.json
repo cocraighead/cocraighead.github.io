@@ -1,17 +1,21 @@
 {
     "pages": [
         {
-            "title":"About Me",
+            "title":"Colin Craighead",
+            "titleCssClass": "content-title-green",
             "iconPath":"assets/me_icon.png",
             "selectedIconPath":"assets/me_icon_selected.png"
         },
         {
             "title":"Poker",
+            "titleCssClass": "content-title-suites",
+            "spanTitle":true,
             "iconPath":"assets/cards_icon.png",
             "selectedIconPath":"assets/cards_icon_selected.png"
         },
         {
             "title":"Avatar The Last Airbender",
+            "titleCssClass": "content-title-blue",
             "iconPath":"assets/atla_icon.png",
             "selectedIconPath":"assets/atla_icon_selected.png"
         }

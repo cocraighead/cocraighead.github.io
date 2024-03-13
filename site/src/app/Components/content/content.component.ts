@@ -21,6 +21,7 @@ export class ContentComponent implements OnInit {
 
   ngOnChanges()	: void {
     this.currentPageData = this.data && this.data.pages[this.currentPage]
+    this.currentPageData.titleArray = this.currentPageData.title.split('');
   }
 
 

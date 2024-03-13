@@ -1,0 +1,39 @@
+.content-wrapper{
+    height: 92%;
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 3px;
+    padding-top: 28px;
+
+    text-align: center;
+}
+
+.content-title{
+    font-size: 3vw;
+
+    @media (max-width: 1400px) {
+        font-size: 45px;
+    }
+}
+
+.content-title-green{
+    color: #1ad853;
+}
+
+.content-title-blue{
+    color: #29c9db;
+}
+
+.content-title-suites span:nth-of-type(1n){
+    color:green;
+}
+.content-title-suites span:nth-of-type(2n){
+    color:red;
+}
+.content-title-suites span:nth-of-type(3n){
+    color:rgb(243, 240, 43);
+}
+.content-title-suites span:nth-of-type(4n){
+    color:rgb(180, 33, 148);
+}

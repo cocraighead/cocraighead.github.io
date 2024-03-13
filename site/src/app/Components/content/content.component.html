@@ -1,3 +1,8 @@
-<div *ngIf="currentPageData">
-    {{currentPageData.title}}
+<div *ngIf="currentPageData" class="content-wrapper">
+    <div *ngIf="!currentPageData.spanTitle" class="content-title {{currentPageData.titleCssClass}}">{{currentPageData.title}}</div>
+    <div *ngIf="currentPageData.spanTitle" class="content-title {{currentPageData.titleCssClass}}">
+        <ng-container *ngFor="let letter of currentPageData.titleArray">
+        <span>{{letter}}</span>
+        </ng-container>
+    </div>
 </div>
