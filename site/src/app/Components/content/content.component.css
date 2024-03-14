@@ -1,11 +1,5 @@
 .content-wrapper{
-    height: 92%;
-    width: 100%;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-bottom: 3px;
-    padding-top: 28px;
-
+    padding: 28px;
     text-align: center;
 }
 
@@ -36,4 +30,25 @@
 }
 .content-title-suites span:nth-of-type(4n){
     color:rgb(180, 33, 148);
+}
+
+.inner-content-wrapper{
+    padding-top: 72px;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+
+    @media (max-width: 1200px) {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    @media (max-width: 1000px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+.inner-content-wrapper p{
+    font-size: large;
 }

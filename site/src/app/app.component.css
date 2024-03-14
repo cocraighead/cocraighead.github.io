@@ -1,16 +1,11 @@
 .app-wrapper{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
     height: 100vh;
 }
 
 .nav-wrapper-outer{
-    margin: 8px 8px 2px 2px;
+    position: fixed;
+    z-index: 2;
+    margin: 24px 8px 2px 2px;
     width: 80px;
-}
-
-.content-wrapper-outer{
-    width: 92%;
+    height: calc(100vh - 32px);
 }

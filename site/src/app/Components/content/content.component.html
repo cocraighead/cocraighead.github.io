@@ -5,4 +5,17 @@
         <span>{{letter}}</span>
         </ng-container>
     </div>
+    <div class="inner-content-wrapper">
+        <ng-container *ngFor="let innerContent of currentPageData.content">
+            <ng-container *ngIf="innerContent.type == 'header'">
+                <h2 class="{{innerContent.css}}" innerHTML="{{innerContent.text}}"></h2>
+            </ng-container>
+            <ng-container *ngIf="innerContent.type == 'paragraph'">
+                <p class="{{innerContent.css}}" innerHTML="{{innerContent.text}}"></p>
+            </ng-container>
+            <ng-container *ngIf="innerContent.type == 'image'">
+                <img class="{{innerContent.css}}" src="{{innerContent.path}}"/>
+            </ng-container>
+        </ng-container>
+    </div>
 </div>
