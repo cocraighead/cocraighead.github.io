@@ -1,38 +1,56 @@
 {
     "pages": [
         {
-            "title":"Colin Craighead",
+            "title":"Welcome!",
             "titleCssClass": "content-title-green",
             "iconPath":"assets/me_icon.png",
             "selectedIconPath":"assets/me_icon_selected.png",
             "content": [
                 {
                     "type": "image",
-                    "path":"assets/head_shot.jpg"
+                    "path":"assets/head_shot.jpg",
+                    "css": "small-image"
+                },
+                {
+                    "type": "image",
+                    "path":"assets/lake.JPG",
+                    "css": "large-image"
                 },
                 {
                     "type": "header",
-                    "text": "Welcome to my simple web site!"
+                    "text": "About Me"
                 },
                 {
                     "type": "paragraph",
-                    "text":"I'm someone who has been learning computer science since 2014. Along the way I have had my interest peaked by CGI, Data Scraping, Web Development, Numerical Computation, and Probability. I'm focused on improving these skills through my current job and personal projects. I <i>love</i> to search for bugs and think of extreme edge cases."
+                    "text":"I've been learning computer science since 2014. Along the way I have had my interest peaked by CGI, Data Scraping, Web Development, Numerical Computation, and Probability. I'm focused on improving these skills through my current job and personal projects. I like to search for sneaky bugs and think of edge cases."
                 },
                 {
                     "type": "paragraph",
-                    "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                    "text": "Outsite of CS, I love venturing into the Colorado wilderness. During the winter you can find me hitting the ski slopes or hiking backcountry terain on AT skis. During the summer, my favorite season, I could be camping, hiking, or tubing. Like a lot of computer scientists, I do my fair share of video gaming. I'd even give it credit for sparking my intrest in coding."
+                },
+                {
+                    "type": "header",
+                    "text": "This Site"
                 },
                 {
                     "type": "paragraph",
-                    "text":"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae."
+                    "text": "This site highlights a few of my past and current projects. Some of these projects, including this site, are a work in progress. For more information about myself or the code please visit my LinkedIn and GitHub."
                 },
                 {
-                    "type": "paragraph",
-                    "text":"Praesent aliquam, risus sed venenatis tempus, dolor augue molestie leo, eget porttitor orci diam id nisi. Aliquam vitae placerat urna. Vestibulum euismod, orci ut mollis aliquet, nisi est varius risus, ut consectetur odio velit sed purus. Praesent ullamcorper eros eget tellus luctus, non fringilla lacus egestas. In tincidunt interdum urna faucibus volutpat. Sed tincidunt eget purus ac pharetra. Nulla ac viverra neque. Nunc malesuada condimentum varius. Etiam suscipit volutpat libero eu dapibus. Maecenas dui orci, tincidunt vitae luctus in, consequat id risus. Cras nec diam placerat, hendrerit justo sed, sollicitudin leo. Proin pellentesque libero at enim commodo, elementum accumsan nibh ultrices. Etiam gravida felis vitae nisl hendrerit, ut mattis erat cursus. Donec elementum eleifend accumsan. In sit amet orci ut magna mollis pulvinar."
+                    "type": "link",
+                    "href": "https://www.linkedin.com/in/colin-craighead",
+                    "text": "linkedin.com/in/colin-craighead",
+                    "img": "assets/in_icon.jpg",
+                    "cssImg": "link-icon",
+                    "cssA": "link-right-margin"
                 },
                 {
-                    "type": "paragraph",
-                    "text":"Praesent aliquam, risus sed venenatis tempus, dolor augue molestie leo, eget porttitor orci diam id nisi. Aliquam vitae placerat urna. Vestibulum euismod, orci ut mollis aliquet, nisi est varius risus, ut consectetur odio velit sed purus. Praesent ullamcorper eros eget tellus luctus, non fringilla lacus egestas. In tincidunt interdum urna faucibus volutpat. Sed tincidunt eget purus ac pharetra. Nulla ac viverra neque. Nunc malesuada condimentum varius. Etiam suscipit volutpat libero eu dapibus. Maecenas dui orci, tincidunt vitae luctus in, consequat id risus. Cras nec diam placerat, hendrerit justo sed, sollicitudin leo. Proin pellentesque libero at enim commodo, elementum accumsan nibh ultrices. Etiam gravida felis vitae nisl hendrerit, ut mattis erat cursus. Donec elementum eleifend accumsan. In sit amet orci ut magna mollis pulvinar."
+                    "type": "link",
+                    "href": "https://github.com/cocraighead",
+                    "text": "github.com/cocraighead",
+                    "img": "assets/github_icon.png",
+                    "cssImg": "link-icon",
+                    "cssA": ""
                 }
             ]
         },

@@ -5,6 +5,7 @@
 
 .content-title{
     font-size: 3vw;
+    padding-top: 14px;
 
     @media (max-width: 1400px) {
         font-size: 45px;
@@ -12,7 +13,7 @@
 }
 
 .content-title-green{
-    color: #1ad853;
+    color: #095e22;
 }
 
 .content-title-blue{
@@ -33,7 +34,7 @@
 }
 
 .inner-content-wrapper{
-    padding-top: 72px;
+    padding-top: 52px;
     padding-left: 200px;
     padding-right: 200px;
     
@@ -49,6 +50,32 @@
     }
 }
 
+.inner-content-wrapper h2{
+    margin-block-end: .3em;
+}
+
 .inner-content-wrapper p{
+    margin-block-start: .3em;
     font-size: large;
+}
+
+.inner-content-wrapper a{
+    font-size: large;
+}
+
+.link-right-margin{
+    margin-right: 12%;
+}
+
+.large-image{
+    width: 50%;
+}
+
+.small-image{
+    width: 16.55%;
+}
+
+.link-icon{
+    vertical-align: bottom;
+    margin-right: 4px;
 }

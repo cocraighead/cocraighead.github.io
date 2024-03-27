@@ -16,6 +16,10 @@
             <ng-container *ngIf="innerContent.type == 'image'">
                 <img class="{{innerContent.css}}" src="{{innerContent.path}}"/>
             </ng-container>
+            <ng-container *ngIf="innerContent.type == 'link'">
+                <img *ngIf="innerContent.img" src="{{innerContent.img}}" class="{{innerContent.cssImg}}"/>
+                <a target="_blank" href="{{innerContent.href}}" innerHTML="{{innerContent.text}}" class="{{innerContent.cssA}}"></a>
+            </ng-container>
         </ng-container>
     </div>
 </div>
