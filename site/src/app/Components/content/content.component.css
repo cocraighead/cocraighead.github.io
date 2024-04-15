@@ -24,6 +24,10 @@
     color: #c79b2b;
 }
 
+.content-title-orange{
+    color: #de4312;
+}
+
 .content-title-suites span:nth-of-type(1n){
     color:green;
 }
@@ -31,7 +35,7 @@
     color:red;
 }
 .content-title-suites span:nth-of-type(3n){
-    color:rgb(243, 240, 43);
+    color: #c79b2b;
 }
 .content-title-suites span:nth-of-type(4n){
     color:rgb(180, 33, 148);

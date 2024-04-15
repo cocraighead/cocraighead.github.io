@@ -65,17 +65,23 @@
             "selectedIconPath":"assets/w_icon_selected.png"
         },
         {
-            "title":"Avatar The Last Airbender",
+            "title":"Computer Graphics",
             "titleCssClass": "content-title-blue",
             "iconPath":"assets/atla_icon.png",
             "selectedIconPath":"assets/atla_icon_selected.png"
         },
         {
-            "title":"Poker",
+            "title":"Computer Graphics + Probability" ,
             "titleCssClass": "content-title-suites",
             "spanTitle":true,
             "iconPath":"assets/cards_icon.png",
             "selectedIconPath":"assets/cards_icon_selected.png"
+        },
+        {
+            "title":"Numerical Computation" ,
+            "titleCssClass": "content-title-orange",
+            "iconPath":"assets/calculator_icon.png",
+            "selectedIconPath":"assets/calculator_icon_selected.png"
         }
         
     ]
