@@ -18,6 +18,14 @@
                 },
                 {
                     "type": "header",
+                    "text": "This Site"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "This site highlights a few of my past and current projects. Some of these projects, including this site, are a work in progress. For more information about myself or the code please visit my LinkedIn and GitHub."
+                },
+                {
+                    "type": "header",
                     "text": "About Me"
                 },
                 {
@@ -29,12 +37,8 @@
                     "text": "Outsite of CS, I love venturing into the Colorado wilderness. During the winter you can find me hitting the ski slopes or hiking backcountry terain on AT skis. During the summer, my favorite season, I could be camping, hiking, or tubing. Like a lot of computer scientists, I do my fair share of video gaming. I'd even give it credit for sparking my intrest in coding."
                 },
                 {
-                    "type": "header",
-                    "text": "This Site"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "This site highlights a few of my past and current projects. Some of these projects, including this site, are a work in progress. For more information about myself or the code please visit my LinkedIn and GitHub."
+                    "type": "buffer",
+                    "reps": [1,2,3]
                 },
                 {
                     "type": "link",
@@ -55,17 +59,23 @@
             ]
         },
         {
-            "title":"Poker",
-            "titleCssClass": "content-title-suites",
-            "spanTitle":true,
-            "iconPath":"assets/cards_icon.png",
-            "selectedIconPath":"assets/cards_icon_selected.png"
+            "title":"Web Development",
+            "titleCssClass": "content-title-sun-yellow",
+            "iconPath":"assets/w_icon.png",
+            "selectedIconPath":"assets/w_icon_selected.png"
         },
         {
             "title":"Avatar The Last Airbender",
             "titleCssClass": "content-title-blue",
             "iconPath":"assets/atla_icon.png",
             "selectedIconPath":"assets/atla_icon_selected.png"
+        },
+        {
+            "title":"Poker",
+            "titleCssClass": "content-title-suites",
+            "spanTitle":true,
+            "iconPath":"assets/cards_icon.png",
+            "selectedIconPath":"assets/cards_icon_selected.png"
         }
         
     ]
