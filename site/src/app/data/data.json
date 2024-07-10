@@ -68,10 +68,121 @@
             "title":"Computer Graphics",
             "titleCssClass": "content-title-blue",
             "iconPath":"assets/atla_icon.png",
-            "selectedIconPath":"assets/atla_icon_selected.png"
+            "selectedIconPath":"assets/atla_icon_selected.png",
+            "content": [
+                {
+                    "type": "buffer",
+                    "reps": [1]
+                },
+                {
+                    "type": "paragraph",
+                    "text": "This page highlights two computer graphics projects I worked on in college.<br> These projects were the final projects for my graphics courses. Project Aang focuses more on creating 3D structures through OpenGL, while my CSCI4239 Project focuses more on using different types of shaders."
+                },
+                {
+                    "type": "buffer",
+                    "reps": [1]
+                },
+                {
+                    "type": "header",
+                    "text": "Project Aang"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "For Project Aang, three locations from the Avatar the Last Airbender show were created."
+                },
+                {
+                    "type": "image",
+                    "path":"assets/ProjectAangMap.png",
+                    "css": "large-image"
+                },
+                {
+                    "type": "image",
+                    "path":"assets/ChinCityTemple.png",
+                    "css": "large-image"
+                },
+                {
+                    "type": "image",
+                    "path":"assets/FireNationTemple.png",
+                    "css": "large-image"
+                },
+                {
+                    "type": "image",
+                    "path":"assets/EasternAirTemple.png",
+                    "css": "large-image"
+                },
+                {
+                    "type": "header",
+                    "text": "Terrain"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "One of the highlights for this project was the terrain. You can see it being used as cliff walls, cliff peaks, and other rocky structures. It was generated using \"random\" height values for a 2D grid of points. Normals for each point on the grid were calculated using the cross product function. For the cliffs, multiple grids of terrian were generated and connected. The cliffs could have a dynamic number of sides. There should be 4, 5, and 6 sided cliffs in the screen shot. For the peaks of the mountains, one grid of terrain was used, but the random height function forced points closer to the center of the grid to have larger values"
+                },
+                {
+                    "type": "header",
+                    "text": "Bridges"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Another highlight was the bridges on the Eastern Air Temple. Their shape was gernerated by using two ellipse functions. One for an outer and one for an inner. Normals for the ellipse points were calculated using the line perpendicular to the tangent at that point. The tangent's slope comes from the derivative of the equations below."
+                },
+                {
+                    "type": "image",
+                    "path":"assets/elipsemath.jpeg",
+                    "css": "large-image"
+                },
+                {
+                    "type": "buffer",
+                    "reps": [1,2,3,4,5]
+                },
+                {
+                    "type": "header",
+                    "text": "CSCI4239 Project"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "For my CSCI4239 Project two scenes were created. A Bar and a Campground."
+                },
+                {
+                    "type": "image",
+                    "path":"assets/Bar.png",
+                    "css": "large-image"
+                },
+                {
+                    "type": "image",
+                    "path":"assets/CampGround.png",
+                    "css": "large-image"
+                },
+                {
+                    "type": "header",
+                    "text": "Fire Flies"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "One of the highlights for this project was the fireflies. A geometry shader was used to convert a point into a square with a dot texture on it. These squares would always face the scene's camera. The black of the texture would also blend with the background color to give the glowing effect. For the bug's movement, a invisible box was created for them to bounce around in. Some randomization was added to their bounce and speed to make the movement floaty and life like. Logic was also added to have the bugs transition from lit to non-lit."
+                },
+                {
+                    "type": "image",
+                    "path":"assets/fireflieszoomed.png",
+                    "css": "large-image"
+                },
+                {
+                    "type": "header",
+                    "text": "Lake Reflection"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Another hightlight for this project was the lake's reflection. This was done by drawing the scene multiple times and storing that draw to a frame. The frames were then combined into a final frame the user sees. The first draw is from the scene's camera, where the surface of the lake is a flat green screen. The second draw is from the virtual camera spot as if the lake was a mirror. For this draw, the lake has no surface so the camera can see through it. The green screen from frame one is then replaced by the its contents in frame two."
+                },
+                {
+                    "type": "image",
+                    "path":"assets/reflection.png",
+                    "css": "large-image"
+                }
+            ]
         },
         {
-            "title":"Computer Graphics + Probability" ,
+            "title":"WebGl Poker Project" ,
             "titleCssClass": "content-title-suites",
             "spanTitle":true,
             "iconPath":"assets/cards_icon.png",
