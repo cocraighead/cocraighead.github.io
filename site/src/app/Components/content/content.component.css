@@ -56,6 +56,11 @@
         padding-left: 100px;
         padding-right: 100px;
     }
+
+    @media (max-width: 700px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .inner-content-wrapper h2{
@@ -77,10 +82,18 @@
 
 .large-image{
     width: 50%;
+
+    @media (max-width: 700px) {
+        width: 98%;
+    }
 }
 
 .small-image{
     width: 16.55%;
+
+    @media (max-width: 700px) {
+        width: 98%;
+    }
 }
 
 .link-icon{

@@ -13,16 +13,23 @@ export class NavComponent implements OnInit {
   @Input() data:any
   @Input() currentPage:number | undefined
   @Output() pageChange = new EventEmitter<number>();
+  mobileNav = window.screen.width < 700
+  navHidden = this.mobileNav
 
   ngOnInit(): void {
-    
+
   }
 
   iconClicked(i:number): void{
     this.currentPage = i
+    if(this.mobileNav){
+      this.navHidden = true
+    }
     this.pageChange.emit(i);
   }
 
   
-
+  showNav(): void{
+    this.navHidden = false
+  }
 }

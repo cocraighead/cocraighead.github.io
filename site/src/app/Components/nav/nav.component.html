@@ -1,8 +1,15 @@
-<div class="nav-wrapper">
-    <div *ngFor="let page of data.pages; index as i;">
-        <div (click)="iconClicked(i)" class="nav-image-wrapper">
-            <img *ngIf="i === currentPage" class="nav-image" src={{page.selectedIconPath}}>
-            <img *ngIf="i !== currentPage" class="nav-image" src={{page.iconPath}}>
+<ng-container *ngIf="!navHidden">
+    <div class="nav-wrapper">
+        <div *ngFor="let page of data.pages; index as i;">
+            <div (click)="iconClicked(i)" class="nav-image-wrapper">
+                <img *ngIf="i === currentPage" class="nav-image" src={{page.selectedIconPath}}>
+                <img *ngIf="i !== currentPage" class="nav-image" src={{page.iconPath}}>
+            </div>
         </div>
     </div>
-</div>
+</ng-container>
+<ng-container *ngIf="navHidden">
+    <div class="nav-wrapper-closed">
+        <img (click)="showNav()" src="/assets/open_nav_arrows.png">
+    </div>
+</ng-container>
