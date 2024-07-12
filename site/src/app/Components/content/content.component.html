@@ -23,6 +23,9 @@
             <ng-container *ngIf="innerContent.type == 'buffer'">
                 <br *ngFor="let letter of innerContent.reps">
             </ng-container>
+            <ng-container *ngIf="innerContent.type == 'screenwidthtest'">
+                <div class="{{innerContent.css}}">how big is the screen. Warmer colors are bigger</div>
+            </ng-container>
         </ng-container>
     </div>
 </div>

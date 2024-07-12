@@ -34,7 +34,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Outsite of CS, I love venturing into the Colorado wilderness. During the winter you can find me hitting the ski slopes or hiking backcountry terain on AT skis. During the summer, my favorite season, I could be camping, hiking, or tubing. Like a lot of computer scientists, I do my fair share of video gaming. I'd even give it credit for sparking my intrest in coding."
+                    "text": "Outside of CS, I love venturing into the Colorado wilderness. During the winter you can find me hitting the ski slopes or hiking backcountry terrain on AT skis. During the summer, my favorite season, I could be camping, hiking, or tubing. Like a lot of computer scientists, I do my fair share of video gaming. I'd even give it credit for sparking my interest in coding."
                 },
                 {
                     "type": "buffer",
@@ -192,7 +192,13 @@
             "title":"Numerical Computation" ,
             "titleCssClass": "content-title-orange",
             "iconPath":"assets/calculator_icon.png",
-            "selectedIconPath":"assets/calculator_icon_selected.png"
+            "selectedIconPath":"assets/calculator_icon_selected.png",
+            "content": [
+                {
+                    "type": "screenwidthtest",
+                    "css": "screen-size-test"
+                }
+            ]
         }
         
     ]
