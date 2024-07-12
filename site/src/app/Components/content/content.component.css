@@ -7,7 +7,7 @@
     font-size: 3vw;
     padding-top: 14px;
 
-    @media (max-width: 1400px) {
+    @media only screen and (max-width: 1400px) {
         font-size: 45px;
     }
 }
@@ -47,17 +47,17 @@
     padding-right: 200px;
     
 
-    @media (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         padding-left: 160px;
         padding-right: 160px;
     }
 
-    @media (max-width: 1000px) {
+    @media only screen and (max-width: 1000px) {
         padding-left: 100px;
         padding-right: 100px;
     }
 
-    @media (max-width: 700px) {
+    @media only screen and (max-width: 700px) {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -83,7 +83,7 @@
 .large-image{
     width: 50%;
 
-    @media (max-width: 700px) {
+    @media only screen and (max-width: 700px) {
         width: 98%;
     }
 }
@@ -91,7 +91,7 @@
 .small-image{
     width: 16.55%;
 
-    @media (max-width: 700px) {
+    @media only screen and (max-width: 700px) {
         width: 98%;
     }
 }
@@ -104,21 +104,21 @@
 .screen-size-test{
     background-color: grey;
 
-    @media (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         background-color: rgb(240, 9, 9);
         
     }
     
-    @media (max-width: 1000px) {
+    @media only screen and (max-width: 1000px) {
         background-color: rgb(0, 141, 19);
     }
     
 
-    @media (max-width: 700px) {
+    @media only screen and (max-width: 700px) {
         background-color: rgb(0, 47, 255);
     }
 
-    @media (max-width: 500px) {
+    @media only screen and (max-width: 500px) {
         background-color: rgb(40, 1, 104);
     }
 }
