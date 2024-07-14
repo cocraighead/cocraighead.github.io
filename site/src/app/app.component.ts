@@ -9,4 +9,16 @@ var json = require('./data/data.json');
 export class AppComponent {
   data = json
   currentPage = 0
+
+  constructor() { }
+
+  pageChangedEvent(e:any):void{
+    this.currentPage = e
+    
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+  }
 }
