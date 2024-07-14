@@ -14,9 +14,22 @@ export class ContentComponent implements OnInit {
 
   @Input() data:any
   currentPageData:any = {}
+
+  screenWidth:number = window.screen.width
+  screenWidthCssClass:string = ''
   
   ngOnInit(): void {
-    
+    if(this.screenWidth < 500){
+      this.screenWidthCssClass = 'size-500'
+    }else if(this.screenWidth < 700){
+      this.screenWidthCssClass = 'size-700'
+    }else if(this.screenWidth < 1000){
+      this.screenWidthCssClass = 'size-1000'
+    }else if(this.screenWidth < 1200){
+      this.screenWidthCssClass = 'size-1200'
+    }else if(this.screenWidth < 1400){
+      this.screenWidthCssClass = 'size-1400'
+    }
   }
 
   ngOnChanges()	: void {

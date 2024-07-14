@@ -1,20 +1,20 @@
 <div *ngIf="currentPageData" class="content-wrapper">
-    <div *ngIf="!currentPageData.spanTitle" class="content-title {{currentPageData.titleCssClass}}">{{currentPageData.title}}</div>
-    <div *ngIf="currentPageData.spanTitle" class="content-title {{currentPageData.titleCssClass}}">
+    <div *ngIf="!currentPageData.spanTitle" class="content-title {{screenWidthCssClass}} {{currentPageData.titleCssClass}}">{{currentPageData.title}}</div>
+    <div *ngIf="currentPageData.spanTitle" class="content-title {{screenWidthCssClass}} {{currentPageData.titleCssClass}}">
         <ng-container *ngFor="let letter of currentPageData.titleArray">
         <span>{{letter}}</span>
         </ng-container>
     </div>
-    <div class="inner-content-wrapper">
+    <div class="inner-content-wrapper {{screenWidthCssClass}}">
         <ng-container *ngFor="let innerContent of currentPageData.content">
             <ng-container *ngIf="innerContent.type == 'header'">
-                <h2 class="{{innerContent.css}}" innerHTML="{{innerContent.text}}"></h2>
+                <h2 class="{{innerContent.css}} {{screenWidthCssClass}}" innerHTML="{{innerContent.text}}"></h2>
             </ng-container>
             <ng-container *ngIf="innerContent.type == 'paragraph'">
-                <p class="{{innerContent.css}}" innerHTML="{{innerContent.text}}"></p>
+                <p class="{{innerContent.css}} {{screenWidthCssClass}}" innerHTML="{{innerContent.text}}"></p>
             </ng-container>
             <ng-container *ngIf="innerContent.type == 'image'">
-                <img class="{{innerContent.css}}" src="{{innerContent.path}}"/>
+                <img class="{{innerContent.css}} {{screenWidthCssClass}}" src="{{innerContent.path}}"/>
             </ng-container>
             <ng-container *ngIf="innerContent.type == 'link'">
                 <img *ngIf="innerContent.img" src="{{innerContent.img}}" class="{{innerContent.cssImg}}"/>
@@ -24,7 +24,7 @@
                 <br *ngFor="let letter of innerContent.reps">
             </ng-container>
             <ng-container *ngIf="innerContent.type == 'screenwidthtest'">
-                <div class="{{innerContent.css}}">how big is the screen. Warmer colors are bigger</div>
+                <div class="{{innerContent.css}} {{screenWidthCssClass}}">how big is the screen. Warmer colors are bigger</div>
             </ng-container>
         </ng-container>
     </div>

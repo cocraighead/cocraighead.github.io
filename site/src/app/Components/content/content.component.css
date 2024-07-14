@@ -6,10 +6,26 @@
 .content-title{
     font-size: 3vw;
     padding-top: 14px;
+}
 
-    @media only screen and (max-width: 1400px) {
-        font-size: 45px;
-    }
+.content-title.size-500{   
+    font-size: 12vw;
+}
+
+.content-title.size-700{   
+    font-size: 10vw;
+}
+
+.content-title.size-1000{   
+    font-size: 6vw;
+}
+
+.content-title.size-1200{   
+    font-size: 5vw;
+}
+
+.content-title.size-1400{   
+    font-size: 5vw;
 }
 
 .content-title-green{
@@ -45,22 +61,26 @@
     padding-top: 52px;
     padding-left: 200px;
     padding-right: 200px;
-    
+}
 
-    @media only screen and (max-width: 1200px) {
-        padding-left: 160px;
-        padding-right: 160px;
-    }
+.inner-content-wrapper.size-1200{
+    padding-left: 160px;
+    padding-right: 160px;
+}
 
-    @media only screen and (max-width: 1000px) {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
+.inner-content-wrapper.size-1000{
+    padding-left: 100px;
+    padding-right: 100px;
+}
 
-    @media only screen and (max-width: 700px) {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+.inner-content-wrapper.size-700{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.inner-content-wrapper.size-500{
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .inner-content-wrapper h2{
@@ -82,18 +102,26 @@
 
 .large-image{
     width: 50%;
+}
 
-    @media only screen and (max-width: 700px) {
-        width: 98%;
-    }
+.large-image.size-700{
+    width: 98%;
+}
+
+.large-image.size-500{
+    width: 98%;
 }
 
 .small-image{
     width: 16.55%;
+}
 
-    @media only screen and (max-width: 700px) {
-        width: 98%;
-    }
+.small-image.size-700{
+    width: 98%;
+}
+
+.small-image.size-500{
+    width: 98%;
 }
 
 .link-icon{
@@ -103,22 +131,21 @@
 
 .screen-size-test{
     background-color: grey;
+}
 
-    @media only screen and (max-width: 1200px) {
-        background-color: rgb(240, 9, 9);
-        
-    }
-    
-    @media only screen and (max-width: 1000px) {
-        background-color: rgb(0, 141, 19);
-    }
-    
+.screen-size-test.size-1200 {
+    background-color: rgb(240, 9, 9); 
+}
 
-    @media only screen and (max-width: 700px) {
-        background-color: rgb(0, 47, 255);
-    }
+.screen-size-test.size-1000 {
+    background-color: rgb(0, 141, 19);
+}
 
-    @media only screen and (max-width: 500px) {
-        background-color: rgb(40, 1, 104);
-    }
+
+.screen-size-test.size-700 {
+    background-color: rgb(0, 47, 255);
+}
+
+.screen-size-test.size-500 {
+    background-color: rgb(40, 1, 104);
 }
