@@ -7,7 +7,10 @@
     </div>
     <div class="inner-content-wrapper {{screenWidthCssClass}}">
         <ng-container *ngFor="let innerContent of currentPageData.content">
-            <ng-container *ngIf="innerContent.type == 'header'">
+            <ng-container *ngIf="innerContent.type == 'header1'">
+                <h1 class="{{innerContent.css}} {{screenWidthCssClass}}" innerHTML="{{innerContent.text}}"></h1>
+            </ng-container>
+            <ng-container *ngIf="innerContent.type == 'header2'">
                 <h2 class="{{innerContent.css}} {{screenWidthCssClass}}" innerHTML="{{innerContent.text}}"></h2>
             </ng-container>
             <ng-container *ngIf="innerContent.type == 'paragraph'">
@@ -22,9 +25,6 @@
             </ng-container>
             <ng-container *ngIf="innerContent.type == 'buffer'">
                 <br *ngFor="let letter of innerContent.reps">
-            </ng-container>
-            <ng-container *ngIf="innerContent.type == 'screenwidthtest'">
-                <div class="{{innerContent.css}} {{screenWidthCssClass}}">how big is the screen. Warmer colors are bigger</div>
             </ng-container>
         </ng-container>
     </div>

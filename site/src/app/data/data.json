@@ -8,16 +8,11 @@
             "content": [
                 {
                     "type": "image",
-                    "path":"assets/head_shot.jpg",
-                    "css": "small-image"
-                },
-                {
-                    "type": "image",
                     "path":"assets/lake.JPG",
                     "css": "large-image"
                 },
                 {
-                    "type": "header",
+                    "type": "header1",
                     "text": "This Site"
                 },
                 {
@@ -25,7 +20,7 @@
                     "text": "This site highlights a few of my past and current projects. Some of these projects, including this site, are a work in progress. For more information about myself or the code please visit my LinkedIn and GitHub."
                 },
                 {
-                    "type": "header",
+                    "type": "header1",
                     "text": "About Me"
                 },
                 {
@@ -34,7 +29,12 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Outside of CS, I love venturing into the Colorado wilderness. During the winter you can find me hitting the ski slopes or hiking backcountry terrain on AT skis. During the summer, my favorite season, I could be camping, hiking, or tubing. Like a lot of computer scientists, I do my fair share of video gaming. I'd even give it credit for sparking my interest in coding."
+                    "text": "Outside of CS, I love venturing into the Colorado wilderness. You can find me hitting the ski slopes and hiking in the backcountry. Like a lot of computer scientists, I enjoy playing video games. I'd even give it credit for sparking my interest in coding."
+                },
+                {
+                    "type": "image",
+                    "path":"assets/head_shot.jpg",
+                    "css": "small-image"
                 },
                 {
                     "type": "buffer",
@@ -62,7 +62,34 @@
             "title":"Web Development",
             "titleCssClass": "content-title-sun-yellow",
             "iconPath":"assets/w_icon.png",
-            "selectedIconPath":"assets/w_icon_selected.png"
+            "selectedIconPath":"assets/w_icon_selected.png",
+            "content": [
+                {
+                    "type": "buffer",
+                    "reps": [1]
+                },
+                {
+                    "type": "header1",
+                    "text": "Web Scraper"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "For Project Aang, three locations from the Avatar the Last Airbender show were created."
+                },
+                {
+                    "type": "image",
+                    "path":"assets/puppeteer.png",
+                    "css": "small-image"
+                },
+                {
+                    "type": "header1",
+                    "text": "MP3 Player"
+                },
+                {
+                    "type": "header1",
+                    "text": "Profesional Projects"
+                }
+            ]
         },
         {
             "title":"Computer Graphics",
@@ -76,14 +103,14 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "This page highlights two computer graphics projects I worked on in college.<br> These projects were the final projects for my graphics courses. Project Aang focuses more on creating 3D structures through OpenGL, while my CSCI4239 Project focuses more on using different types of shaders."
+                    "text": "This page highlights two computer graphics projects I worked on in college.<br> These projects were the final projects for my graphics courses and created with C's OpenGL library. Project Aang focuses more on creating 3D structures, while the CSCI4239 Project focuses more on shaders."
                 },
                 {
                     "type": "buffer",
                     "reps": [1]
                 },
                 {
-                    "type": "header",
+                    "type": "header1",
                     "text": "Project Aang"
                 },
                 {
@@ -111,7 +138,7 @@
                     "css": "large-image"
                 },
                 {
-                    "type": "header",
+                    "type": "header2",
                     "text": "Terrain"
                 },
                 {
@@ -119,7 +146,7 @@
                     "text": "One of the highlights for this project was the terrain. You can see it being used as cliff walls, cliff peaks, and other rocky structures. It was generated using \"random\" height values for a 2D grid of points. Normals for each point on the grid were calculated using the cross product function. For the cliffs, multiple grids of terrian were generated and connected. The cliffs could have a dynamic number of sides. There should be 4, 5, and 6 sided cliffs in the screen shot. For the peaks of the mountains, one grid of terrain was used, but the random height function forced points closer to the center of the grid to have larger values"
                 },
                 {
-                    "type": "header",
+                    "type": "header2",
                     "text": "Bridges"
                 },
                 {
@@ -136,12 +163,12 @@
                     "reps": [1,2,3,4,5]
                 },
                 {
-                    "type": "header",
+                    "type": "header1",
                     "text": "CSCI4239 Project"
                 },
                 {
                     "type": "paragraph",
-                    "text": "For my CSCI4239 Project two scenes were created. A Bar and a Campground."
+                    "text": "For my CSCI4239 Project two scenes were created. A Bar and a Campground. Using vert, geometry, and frag shaders as well as some other techniques these scenes were more advanced then the ones in project Aang. Frag shaders were used to give the brick and the wood per pixel lighting. One was also used to create the backlight of the neon sign. A Geometry shader was use to create the pipes of the neon sign from a set of points. Other features are highlighted below." 
                 },
                 {
                     "type": "image",
@@ -154,7 +181,7 @@
                     "css": "large-image"
                 },
                 {
-                    "type": "header",
+                    "type": "header2",
                     "text": "Fire Flies"
                 },
                 {
@@ -163,11 +190,11 @@
                 },
                 {
                     "type": "image",
-                    "path":"assets/fireflieszoomed.png",
+                    "path":"assets/fireflies_video.gif",
                     "css": "large-image"
                 },
                 {
-                    "type": "header",
+                    "type": "header2",
                     "text": "Lake Reflection"
                 },
                 {
@@ -176,13 +203,13 @@
                 },
                 {
                     "type": "image",
-                    "path":"assets/reflection.png",
+                    "path":"assets/fireworksvideo.gif",
                     "css": "large-image"
                 }
             ]
         },
         {
-            "title":"WebGl Poker Project" ,
+            "title":"Poker Project",
             "titleCssClass": "content-title-suites",
             "spanTitle":true,
             "iconPath":"assets/cards_icon.png",
@@ -194,10 +221,7 @@
             "iconPath":"assets/calculator_icon.png",
             "selectedIconPath":"assets/calculator_icon_selected.png",
             "content": [
-                {
-                    "type": "screenwidthtest",
-                    "css": "screen-size-test"
-                }
+                
             ]
         }
         
