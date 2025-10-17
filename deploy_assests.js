@@ -14,7 +14,7 @@ var srcFolder = './site/src/assets/'
 fs.readdir(srcFolder, function (err, files) {
   files.forEach( function (file) {
     console.log(file)
-    if(file.indexOf('.png') >= 0){
+    if(file.indexOf('.gitkeep') < 0){
         fs.copyFile(srcFolder + file, destFolder + file, function (r) {
             console.log('file copied: ' + file)
         });
