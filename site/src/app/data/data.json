@@ -7,29 +7,12 @@
             "selectedIconPath":"assets/me_icon_selected.png",
             "content": [
                 {
-                    "type": "image",
-                    "path":"assets/lake.JPG",
-                    "css": "large-image"
-                },
-                {
                     "type": "header1",
                     "text": "This Site"
                 },
                 {
                     "type": "paragraph",
-                    "text": "This site highlights a few of my past and current projects. Some of these projects, including this site, are a work in progress. For more information about myself or the code please visit my LinkedIn and GitHub."
-                },
-                {
-                    "type": "header1",
-                    "text": "About Me"
-                },
-                {
-                    "type": "paragraph",
-                    "text":"I've been learning computer science since 2014. Along the way I have had my interest peaked by CGI, Data Scraping, Web Development, Numerical Computation, and Probability. I'm focused on improving these skills through my current job and personal projects. I like to search for sneaky bugs and think of edge cases."
-                },
-                {
-                    "type": "paragraph",
-                    "text": "Outside of CS, I love venturing into the Colorado wilderness. You can find me hitting the ski slopes and hiking in the backcountry. Like a lot of computer scientists, I enjoy playing video games. I'd even give it credit for sparking my interest in coding."
+                    "text": "This site highlights a few of my past and ongoing computer science projects. For more information about myself or the code please visit my LinkedIn and GitHub."
                 },
                 {
                     "type": "image",
@@ -59,51 +42,18 @@
             ]
         },
         {
-            "title":"Web Development",
-            "titleCssClass": "content-title-sun-yellow",
-            "iconPath":"assets/w_icon.png",
-            "selectedIconPath":"assets/w_icon_selected.png",
-            "content": [
-                {
-                    "type": "buffer",
-                    "reps": [1]
-                },
-                {
-                    "type": "header1",
-                    "text": "Web Scraper"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "For Project Aang, three locations from the Avatar the Last Airbender show were created."
-                },
-                {
-                    "type": "image",
-                    "path":"assets/puppeteer.png",
-                    "css": "small-image"
-                },
-                {
-                    "type": "header1",
-                    "text": "MP3 Player"
-                },
-                {
-                    "type": "header1",
-                    "text": "Profesional Projects"
-                }
-            ]
-        },
-        {
             "title":"Computer Graphics",
             "titleCssClass": "content-title-blue",
             "iconPath":"assets/atla_icon.png",
             "selectedIconPath":"assets/atla_icon_selected.png",
             "content": [
                 {
-                    "type": "buffer",
-                    "reps": [1]
+                    "type": "header1",
+                    "text": "About"
                 },
                 {
                     "type": "paragraph",
-                    "text": "This page highlights two computer graphics projects I worked on in college.<br> These projects were the final projects for my graphics courses and created with C's OpenGL library. Project Aang focuses more on creating 3D structures, while the CSCI4239 Project focuses more on shaders."
+                    "text": "This page highlights two computer graphics projects I worked on in college.<br> Both are created with C's OpenGL library. Project Aang focuses on creating 3D structures, while the second one focuses more on shaders."
                 },
                 {
                     "type": "buffer",
@@ -112,10 +62,6 @@
                 {
                     "type": "header1",
                     "text": "Project Aang"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "For Project Aang, three locations from the Avatar the Last Airbender show were created."
                 },
                 {
                     "type": "image",
@@ -143,7 +89,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "One of the highlights for this project was the terrain. You can see it being used as cliff walls, cliff peaks, and other rocky structures. It was generated using \"random\" height values for a 2D grid of points. Normals for each point on the grid were calculated using the cross product function. For the cliffs, multiple grids of terrian were generated and connected. The cliffs could have a dynamic number of sides. There should be 4, 5, and 6 sided cliffs in the screen shot. For the peaks of the mountains, one grid of terrain was used, but the random height function forced points closer to the center of the grid to have larger values"
+                    "text": "Terrain was used as cliff walls, mountain peaks, and rock fields. It was generated using \"random\" height values for a 2D grid of points. Triangles filled in the grid. For the cliffs, multiple grids of terrian were generated and connected. The cliffs could have a dynamic number of sides. There should be 4, 5, and 6 sided cliffs in the screen shot. For the peaks of the mountains, one grid of terrain was used, but the random height function forced points closer to the center of the grid to have larger values"
                 },
                 {
                     "type": "header2",
@@ -151,7 +97,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Another highlight was the bridges on the Eastern Air Temple. Their shape was gernerated by using two ellipse functions. One for an outer and one for an inner. Normals for the ellipse points were calculated using the line perpendicular to the tangent at that point. The tangent's slope comes from the derivative of the equations below."
+                    "text": "Bridges on the Eastern Air Temple had thier shape gernerated from two ellipses. A outer ellipse for the top and a inner ellipse for the bottom. Normals for the ellipse points were calculated using the line perpendicular to the tangent at that point. The tangent's slope comes from the derivative of the equation below."
                 },
                 {
                     "type": "image",
@@ -164,20 +110,23 @@
                 },
                 {
                     "type": "header1",
-                    "text": "CSCI4239 Project"
+                    "text": "Shaders Project"
                 },
                 {
                     "type": "paragraph",
-                    "text": "For my CSCI4239 Project two scenes were created. A Bar and a Campground. Using vert, geometry, and frag shaders as well as some other techniques these scenes were more advanced then the ones in project Aang. Frag shaders were used to give the brick and the wood per pixel lighting. One was also used to create the backlight of the neon sign. A Geometry shader was use to create the pipes of the neon sign from a set of points. Other features are highlighted below." 
+                    "text": "A simple bar and campground were created using vert, geometry, and frag shaders."
+                },
+                {
+                    "type": "header2",
+                    "text": "Pixel Lighting"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "A highlight in the bar is the stone bricks. A normal map was created to match the brick texture. Vert and Frag shaders then calculate lighting per pixel using the normal map."
                 },
                 {
                     "type": "image",
                     "path":"assets/Bar.png",
-                    "css": "large-image"
-                },
-                {
-                    "type": "image",
-                    "path":"assets/CampGround.png",
                     "css": "large-image"
                 },
                 {
@@ -186,7 +135,12 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "One of the highlights for this project was the fireflies. A geometry shader was used to convert a point into a square with a dot texture on it. These squares would always face the scene's camera. The black of the texture would also blend with the background color to give the glowing effect. For the bug's movement, a invisible box was created for them to bounce around in. Some randomization was added to their bounce and speed to make the movement floaty and life like. Logic was also added to have the bugs transition from lit to non-lit."
+                    "text": "Another highlight for this project was the fireflies. A geometry shader was used to convert a point into a square with a firefly texture texture on it. These squares would always face the scene's camera. The firefly would blend with the background to make it look translucent. For the bug's movement, a invisible box was created for them to bounce around in. Some randomization was added to their movement to make it floaty and life like. Logic was also added to have the bugs transition from lit to non-lit."
+                },
+                {
+                    "type": "image",
+                    "path":"assets/CampGround.png",
+                    "css": "large-image"
                 },
                 {
                     "type": "image",
@@ -199,7 +153,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "Another hightlight for this project was the lake's reflection. This was done by drawing the scene multiple times and storing that draw to a frame. The frames were then combined into a final frame the user sees. The first draw is from the scene's camera, where the surface of the lake is a flat green screen. The second draw is from the virtual camera spot as if the lake was a mirror. For this draw, the lake has no surface so the camera can see through it. The green screen from frame one is then replaced by the its contents in frame two."
+                    "text": "Another hightlight for this project was the lake's reflection. This was done by drawing the scene multiple times. The frames were then combined into a final frame the user sees. The first draw is from the scene's camera, where the surface of the lake is a green screen. The second draw is from the \"virtual\" camera location if we treat the lake as a flat mirror. For this draw, the lake has no surface so the camera can see through it. The green screen from frame one is then replaced by the its contents in frame two."
                 },
                 {
                     "type": "image",
@@ -209,21 +163,97 @@
             ]
         },
         {
-            "title":"Poker Project",
-            "titleCssClass": "content-title-suites",
-            "spanTitle":true,
-            "iconPath":"assets/cards_icon.png",
-            "selectedIconPath":"assets/cards_icon_selected.png"
+            "title":"Web Development",
+            "titleCssClass": "content-title-sun-yellow",
+            "iconPath":"assets/w_icon.png",
+            "selectedIconPath":"assets/w_icon_selected.png",
+            "content": [
+                {
+                    "type": "header1",
+                    "text": "MP3 Player"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Using angular I built a MP3 Player application. The focus of this project was to learn Angular and practice building a complex app with it. I also practiced my UX skills by copying UX I liked in existing enterprise apps."
+                },
+                {
+                    "type": "header2",
+                    "text": "Reusable Components"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "The Library, each Playlist, and an Album's song list are all the same angular component."
+                },
+                {
+                    "type": "header2",
+                    "text": "Player Service"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "I created a player service which is a singleton that represents the current playing song, the song queue, and the controlls for each. Compontents accorss the app share this service."
+                }
+            ]
         },
-        {
+                {
             "title":"Numerical Computation" ,
             "titleCssClass": "content-title-orange",
             "iconPath":"assets/calculator_icon.png",
             "selectedIconPath":"assets/calculator_icon_selected.png",
             "content": [
-                
+                {
+                    "type": "header1",
+                    "text": "Integration"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Computers solve the intergral of a function in the same way to what you may have learned first in school. Since the intergral of a function is the area under the curve, the computer will approximate the area by covering it with a number of rectangles and calculating their areas instead."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Select your favorite equation below."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Insert vistual example on a graph."
+                },
+                {
+                    "type": "header2",
+                    "text": "Error"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "This calculation will be off based on the n number of rectangles drawn. Error can be defined as: ."
+                }
+            ]
+        },
+        {
+            "title":"Poker Project",
+            "titleCssClass": "content-title-suites",
+            "spanTitle":true,
+            "iconPath":"assets/cards_icon.png",
+            "selectedIconPath":"assets/cards_icon_selected.png",
+            "content": [
+                {
+                    "type": "header1",
+                    "text": "Game Engine"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "I wrote the logic for determining what hand a user has. ..."
+                },
+                {
+                    "type": "paragraph",
+                    "text": "This logic is used to help the user know their hand as they play it and to determine a winner by compairing hands against one another."
+                },
+                {
+                    "type": "header1",
+                    "text": "Animations"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "I wrote animation logic with in the WebGL logic to produce the deal, card flip, and peek animations."
+                }
             ]
         }
-        
     ]
 }
