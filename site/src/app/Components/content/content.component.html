@@ -24,7 +24,7 @@
                 <a target="_blank" href="{{innerContent.href}}" innerHTML="{{innerContent.text}}" class="{{innerContent.cssA}}"></a>
             </ng-container>
             <ng-container *ngIf="innerContent.type == 'buffer'">
-                <br *ngFor="let letter of innerContent.reps">
+                <br *ngFor="let item of [].constructor(innerContent.reps)">
             </ng-container>
         </ng-container>
     </div>

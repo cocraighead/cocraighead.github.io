@@ -7,10 +7,6 @@
             "selectedIconPath":"assets/me_icon_selected.png",
             "content": [
                 {
-                    "type": "header1",
-                    "text": "This Site"
-                },
-                {
                     "type": "paragraph",
                     "text": "This site highlights a few of my past and ongoing computer science projects. For more information about myself or the code please visit my LinkedIn and GitHub."
                 },
@@ -21,7 +17,7 @@
                 },
                 {
                     "type": "buffer",
-                    "reps": [1,2,3]
+                    "reps": 8
                 },
                 {
                     "type": "link",
@@ -42,7 +38,7 @@
             ]
         },
         {
-            "title":"Computer Graphics",
+            "title":"Project Aang",
             "titleCssClass": "content-title-blue",
             "iconPath":"assets/atla_icon.png",
             "selectedIconPath":"assets/atla_icon_selected.png",
@@ -53,15 +49,7 @@
                 },
                 {
                     "type": "paragraph",
-                    "text": "This page highlights two computer graphics projects I worked on in college.<br> Both are created with C's OpenGL library. Project Aang focuses on creating 3D structures, while the second one focuses more on shaders."
-                },
-                {
-                    "type": "buffer",
-                    "reps": [1]
-                },
-                {
-                    "type": "header1",
-                    "text": "Project Aang"
+                    "text": "Project Aang is a computer graphics project I worked on in college. Aang is the name of a tv show's main character. Some locations in the show inspired the graphics in this project. It was created with C's OpenGL library."
                 },
                 {
                     "type": "image",
@@ -106,36 +94,31 @@
                 },
                 {
                     "type": "buffer",
-                    "reps": [1,2,3,4,5]
-                },
+                    "reps": 6
+                }
+            ]
+        },
+        {
+            "title":"Graphics II",
+            "titleCssClass": "content-title-bug-purple",
+            "iconPath":"assets/firefly_icon.png",
+            "selectedIconPath":"assets/firefly_icon_selected.png",
+            "content": [
                 {
                     "type": "header1",
-                    "text": "Shaders Project"
+                    "text": "About"
                 },
                 {
                     "type": "paragraph",
-                    "text": "A simple bar and campground were created using vert, geometry, and frag shaders."
+                    "text": "I created this project for a college course on computer graphics. The focus of this project was to create two scenes using some of the tricks we learned in class."
                 },
                 {
                     "type": "header2",
-                    "text": "Pixel Lighting"
+                    "text": "Campground"
                 },
                 {
                     "type": "paragraph",
-                    "text": "A highlight in the bar is the stone bricks. A normal map was created to match the brick texture. Vert and Frag shaders then calculate lighting per pixel using the normal map."
-                },
-                {
-                    "type": "image",
-                    "path":"assets/Bar.png",
-                    "css": "large-image"
-                },
-                {
-                    "type": "header2",
-                    "text": "Fire Flies"
-                },
-                {
-                    "type": "paragraph",
-                    "text": "Another highlight for this project was the fireflies. A geometry shader was used to convert a point into a square with a firefly texture texture on it. These squares would always face the scene's camera. The firefly would blend with the background to make it look translucent. For the bug's movement, a invisible box was created for them to bounce around in. Some randomization was added to their movement to make it floaty and life like. Logic was also added to have the bugs transition from lit to non-lit."
+                    "text": "In the campground scene fireflies apear next to a lake. I used a geometry shader to convert a point into a square with a firefly texture on it. These squares would always face the scene's camera. The firefly was blended with the background to make it look translucent. For the bugs movement, an invisible box was created for them to fly around in. Some randomization was added to their movement to make it floaty and life like. Logic was also added to have the bugs change their luminescence."
                 },
                 {
                     "type": "image",
@@ -149,16 +132,33 @@
                 },
                 {
                     "type": "header2",
-                    "text": "Lake Reflection"
+                    "text": "Drawing Multiple Frames"
                 },
                 {
                     "type": "paragraph",
-                    "text": "Another hightlight for this project was the lake's reflection. This was done by drawing the scene multiple times. The frames were then combined into a final frame the user sees. The first draw is from the scene's camera, where the surface of the lake is a green screen. The second draw is from the \"virtual\" camera location if we treat the lake as a flat mirror. For this draw, the lake has no surface so the camera can see through it. The green screen from frame one is then replaced by the its contents in frame two."
+                    "text": "The lake behind the campground has a reflection off its surface. This was done by drawing the scene multiple times. The frames were then combined into a final frame the user sees. The first draw is from the scene's camera, where the surface of the lake is a green screen. The second draw is from the \"virtual\" camera location if we treat the lake as a flat mirror. For this draw, the lake has no surface so the camera can see through it. The green screen from frame one is then replaced by the its contents in frame two."
                 },
                 {
                     "type": "image",
                     "path":"assets/fireworksvideo.gif",
                     "css": "large-image"
+                },
+                {
+                    "type": "header2",
+                    "text": "Pixel Lighting"
+                },
+                {
+                    "type": "paragraph",
+                    "text": "Within the bar scene are stone bricks which have per pixel lighting applied to them. This means that instead of interpolating three normals at the triangles corners, a normal map was created to match the brick's texture for each pixel. Vert and Frag shaders then calculate lighting per pixel using the normal map."
+                },
+                {
+                    "type": "image",
+                    "path":"assets/Bar.png",
+                    "css": "large-image"
+                },
+                {
+                    "type": "buffer",
+                    "reps": 6
                 }
             ]
         },
